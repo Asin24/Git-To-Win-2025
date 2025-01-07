@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    char letters[] = {'L', 'E', 'A', 'P'};
+    int n = 4;
+    
+    for (int i = 0; i < n; i++) {
+        
+        for (int j = 0; j < n; j++) {
+        
+            if (i == j) {
+                printf("%c ", letters[i]);
+            } else {
+                printf("* ");
+            }
+        }
+     
+        printf("\n");
+    }
+
+    return 0;
+}
